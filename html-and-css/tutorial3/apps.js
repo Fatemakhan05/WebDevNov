@@ -1,1 +1,2 @@
-alert( )
+alert( "hello")
+console.hello
