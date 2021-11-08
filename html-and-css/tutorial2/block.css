@@ -1,0 +1,25 @@
+span{
+    display: block;
+}
+div{
+    background-color: blueviolet;
+    color: chocolate;
+    color: darkgreen(251,255,0);
+}
+.main{
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+} 
+   .child
+    {
+        background-color:yellow;
+        padding:4em;
+        margin: 1px;
+
+    }
+    #wrapper{}
+
+
