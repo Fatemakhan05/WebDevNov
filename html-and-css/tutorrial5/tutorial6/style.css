@@ -13,7 +13,7 @@ body{
     flex-direction: row;
     align-items: flex-end;
     padding: 1em;
-    text-decoration: none;
+    text-decoration-color:none;
     /* color:lightcyan;
     border: radius 7px; ; */
 }
