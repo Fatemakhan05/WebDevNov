@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family:  Fatimafont;
+    src: url(sansation_light.woff);
+  }
+
+.container {
+  padding: 1em;
+}
+
+.box {
+  background-color: grey;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+  outline: 10px solid green;
+}
+
+.box > p {
+  text-align: right;
+  direction: rtl;
+  font-family: 'Comforter Brush', cursive;
+
+  /* font-family: "Fatima"; */
+  /* -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000; */
+  -webkit-box-shadow: 7px -5px 10px 0px #4b0082, 11px -9px 10px 0px #0000ff,
+    16px -14px 10px 0px #00ff00, 20px -17px 10px 0px #ffff00,
+    24px -19px 10px 0px #ff7f00, 27px -23px 10px 0px #ff0000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 7px -5px 10px 0px #4b0082, 11px -9px 10px 0px #0000ff,
+    16px -14px 10px 0px #00ff00, 20px -17px 10px 0px #ffff00,
+    24px -19px 10px 0px #ff7f00, 27px -23px 10px 0px #ff0000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
