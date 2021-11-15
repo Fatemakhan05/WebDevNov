@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.box1{
+    height: 150px;
+    width: 150px;
+    border: 4px;
+    border-style: solid;
+
+    color: aqua;
+}
+.box2{
+    height: 150px;
+    width: 150px;
+    border: 4px;
+    border-style: solid;
+
+    color:red;
+}
+.box3{
+    height: 150px;
+    width: 150px;
+    border: 4px;
+    border-style: solid;
+
+    color:teal;
+}
