@@ -1,0 +1,19 @@
+/* html,body{
+    padding: 0;
+    margin: 0; */
+
+.container >p {
+    
+    
+     column-count:3; 
+     /* border-image: url('..\ C:\Users\VDAB\Desktop\Fatema\pinksky') 30 round;
+     border-style: solid;
+     border-width: 4em; */
+    column-gap: 40px;
+    column-rule:4px  double orangered;
+     border: 4mm ridge rgba(170, 50, 220, .6); 
+     transform: rotate(30deg);
+    /* border-color: coral; */
+}
+
+
