@@ -1,0 +1,168 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+    text-decoration: none;
+}
+.nav {
+    display: inline-block; 
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    border: 1px solid darkred;
+   
+    
+}
+.icon{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    padding-top: 100px;
+    padding-left: 650px;
+   
+    
+}
+.center {
+    display: block;
+    margin: 0 auto;
+    height: 50px;  
+    width: 100px;
+   
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    
+    
+}
+li{
+    display: inline;
+    font-size: large;
+    
+    
+}
+a{
+    color: darkred;
+}
+a:hover{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+    background-color: silver;
+    padding: 5px;
+}
+footer{
+    display: inline-block; 
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border: 1px solid darkred;
+
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+}
+
+.img1{
+    width: 250px;
+    height: 200px;
+    padding: 50px 10px 10px 20px;
+}
+.img2{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 280px;
+}
+h3{
+    padding-top: 50px;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
+    width: 49.4%;
+    height: 500px;
+    margin: 0;
+    
+    
+}
+.aside{
+    display: flex;
+    float: right;
+    width: 50%;
+    margin: 0;
+    
+}
+.p1{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 280px;
+}
+.p2{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 280px;
+    width: 400px;
+    text-align: justify;
+}
+text-align: center;
+    position: relative;
+    margin-top: 400px;
+    margin-left: 180px;
+    margin-right: 10px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    
+}
+
+@media only screen and (max-width:600px){
+   
+}
+
+@media only screen and (max-width:2560px){
+    
+}
+@media only screen and (max-width:1044px){
+   
+}
+@media only screen and (max-width:1024px){
+    
+}
+@media only screen and (max-width:768px){
+    
+}
+@media only screen and (max-width:425px){
+    
+}
+@media only screen and (max-width:375px){
+   
+}
+@media only screen and (max-width:320px){
