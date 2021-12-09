@@ -49,13 +49,15 @@ const AutoController={
     // turnLeft: function(){result.innerHTML.log='turning left...'},
     // turnRight: function(){console.log('turning right...')},
     // backword:function(){console.log('backword')}
-    turnLeft: function(){result.innerHTML='turning left...'},
-     turnRight: function(){result.innerHTML='turning right...'},
-     backword:function(){result.innerHTML='backword'},
-     forword:function(){result.innerHTML='forword'},
+    turnLeft: function(){result.innerHTML='Turning Left...'},
+     turnRight: function(){result.innerHTML='Turning Right...'},
+     backword:function(){result.innerHTML='Backword'},
+     forword:function(){result.innerHTML='Forword'},
     
 }
 AutoController.turnRight()
 AutoController.turnLeft()
 AutoController.backword()
 AutoController.forword()
+
+
