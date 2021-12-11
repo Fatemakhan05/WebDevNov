@@ -1,0 +1,16 @@
+body,html
+{
+    padding: 0;
+    margin : 0;
+}
+.container{
+    
+    padding:5px;
+    margin:10px;
+    border-radius: 10px;
+     
+    
+    background-color: burlywood;
+    width: 500px;
+    height: 500px;
+}
