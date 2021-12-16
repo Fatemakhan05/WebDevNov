@@ -59,6 +59,20 @@ value = elGen('a')
 value.href="google.com";
 value.innerHTML="click google";
 
-value = findAll('div');
-console.log(value)
+value = findAll('.delete-item') // return nodelist
+
+value.forEach(btn=>{
+    console.log(btn)
+    btn.addEventListener('click',function(e){
+        e.preventDefault();
+        // click actions 
+        console.log('hello click!!!!')
+        alert(1)
+
+    })
+    
+    
+})
+//value = findAll('div');
+// console.log(value)
 
