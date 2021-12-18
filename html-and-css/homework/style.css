@@ -1,0 +1,32 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    height:  100%;
+     align-items: stretch;
+     justify-content: space-between; 
+    background-color: blanchedalmond;
+    align-content: flex-start;
+     
+    
+}
+ .container >div{
+    background-color: oldlace;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+.h4{
+    align-items: baseline;
+}
+.container{
+    width: 100%;
+    height:350px;
+    background-image: url('jump.jpg');
+    background-repeat: no-repeat;
+} 
+ 

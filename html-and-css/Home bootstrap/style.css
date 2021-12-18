@@ -1,0 +1,18 @@
+body {
+    background-color:rgb(216, 197, 149);
+    text-decoration-color: black;
+}
+
+ .carousel-item img
+ {
+    object-fit: cover;
+    object-position: center;
+    
+    height: 50vh;
+     overflow: hidden;
+}   
+.card-group,card{
+    background-color: darkgray;
+    text-decoration: none;
+}
+ 

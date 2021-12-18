@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(43, 42, 42);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: seashell;
+}
+
+.container > i {
+  font-size: 50pt;
+  color: rgba(214, 26, 26, 0.979);
+}
+
+.fa-user-astronaut {
+  color: rgba(138, 58, 98, 0.787) !important;
+}
+
+.fa-satellite-dish {
+  color: rgba(0, 128, 0, 0.87) !important;
+}
+
+.bi-bootstrap-fill {
+  color: rgb(34, 95, 58) !important;
+}

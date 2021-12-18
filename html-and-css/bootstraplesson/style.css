@@ -1,0 +1,12 @@
+.carousel-item img
+{
+    object-fit:cover;
+    object-position:center;
+    height:100vh;
+    overflow: hidden;
+}.card img{
+    object-position:left;
+    overflow-block:hidden ;
+    width:150px ;
+    height: 150px;
+} 
