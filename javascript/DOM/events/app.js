@@ -12,6 +12,9 @@ book_category.addEventListener('change',e=>{
 addbookbtn.addEventListener('click',e=>{
     e.preventDefault();
     console.log('this is click event')
+    legend.classList.toggle('text-warning')
+    legend.classList.add('new-className')
+    legend.classList.remove('new-className')
 })
 
 // mouseover event
@@ -76,4 +79,21 @@ book_name.addEventListener('cut',e=>{
 // paste event
 book_name.addEventListener('paste',e=>{
     legend.innerText='DATA PASTED!'
+})
+
+
+document.addEventListener('keydown',e=>{
+    console.log(e)
+    if(e.key ==='ArrowUp'){
+        console.log('Go up')
+    }
+    if(e.key ==='ArrowDown'){
+        console.log('Go Down')
+    }
+    if(e.key ==='ArrowLeft'){
+        console.log('Go Left')
+    }
+    if(e.key ==='ArrowRight'){
+        console.log('Go Right')
+    }
 })
