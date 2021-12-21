@@ -69,7 +69,7 @@ ListGroupOfTodos.addEventListener('click',(event)=>{
 
 })
 
-
+let todos = []
 addTodoBtn.addEventListener('click', e => {
     e.preventDefault();
 
@@ -78,7 +78,7 @@ addTodoBtn.addEventListener('click', e => {
         todo_date: todoDate.value
     }
     console.log(obj)
-
+    
     if(todoInput.value !=""){
         responseMessage('success','Todo added')
         // success
@@ -90,10 +90,31 @@ addTodoBtn.addEventListener('click', e => {
         </a>
     </li>
         `
+        todos.push(obj)
+       // addthisDataToStorage(sendobj)
+       console.log(todos)
 
+        localStorage.setItem('todos',JSON.stringify(todos))
     }else{
         responseMessage('danger','Error!')
     }
     
 
 })
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    let todos = JSON.parse(localStorage.getItem('todos'))
+    todos.forEach(todo=>{
+        ListGroupOfTodos.innerHTML+=`
+        <li class="list-group-item d-flex justify-content-between">
+        ${todo.todo_title} - ${todo.todo_date}
+        <a href="#" class="delete-item"> 
+            <i class="fa fa-remove"></i> 
+        </a>
+    </li>
+        `
+    })
+ });
+ 
+
