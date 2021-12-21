@@ -40,11 +40,17 @@ filter.addEventListener('keyup',function(e){
         todoTitle = todoTitle.substring(0,todoTitle.length-2)
         console.log(todoTitle)
         console.log(filterValue.indexOf(todoTitle))
-        if(filterValue.indexOf(todoTitle) === -1){
-            todo.setAttribute('style','display:none !important')
+        if(filterValue !=""){
+            if(filterValue.indexOf(todoTitle) === -1){
+                todo.setAttribute('style','display:none !important')
+            }else{
+                todo.setAttribute('style','display:flex!important;')
+            }
         }else{
+            // filter value empty here
             todo.setAttribute('style','display:flex!important;')
         }
+        
     })
    // console.log(listofTodos)
 })
