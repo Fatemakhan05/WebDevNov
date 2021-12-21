@@ -10,7 +10,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css">
-    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
+    
     <title>Todo List</title>
 </head>
 
@@ -23,16 +23,14 @@
             <div class="card-body">
                 <form id="todo-form" name="form">
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 addTodoBody">
                             <input class="form-control" name="todo" id="todo" autocomplete="off" value="this is static input value" placeholder="Enter a todo">
                             <hr>
-                            <div class="alert alert-danger" role="alert">
-                                This is a primary alert—check it out!
-                              </div>
+                            
                         </div>
                         <div class="form-group col-md-4">
                             <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
-                                <input class="form-control" type="text" autocomplete="off" id="datepicker-input" aria-label="Date-Time">
+                                <input class="form-control todoDate" type="date" autocomplete="off" id="datepicker-input" aria-label="Date-Time">
                                 <span class="tui-ico-date"></span>
                                 <!-- <button type="submit" class="btn btn-danger findme">add todo</button> -->
                             </div>
@@ -40,7 +38,7 @@
 
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-danger">add todo</button>
+                    <button type="submit" class="btn btn-danger addBtn">add todo</button>
                     <hr>
                 </form>
 
@@ -58,25 +56,14 @@
                 </div>
 
                 <hr>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between"> <!--.parentElement -->
+                <ul class="list-group todolist">
+
+                    <!-- <li class="list-group-item d-flex justify-content-between">
                         My todo titleDELETE ME
-                        <a href="#" class="delete-item"> <!-- .parentElement -->
-                            <i class="fa fa-remove"></i> <!-- we are here -->
+                        <a href="#" class="delete-item"> 
+                            <i class="fa fa-remove"></i> 
                         </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        My todo title
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        My todo title
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    </li>
+                    </li> -->
                     
                 </ul>
                 <hr>
@@ -90,6 +77,7 @@
 
     <!-- <script src="js/app.js"></script> -->
     <script src="js/todo.js"></script>
+    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
