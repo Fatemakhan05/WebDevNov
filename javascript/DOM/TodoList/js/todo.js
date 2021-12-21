@@ -15,7 +15,7 @@ const addTodoBtn = document.querySelector('.addBtn')
 const addTodoBodyForAlert = document.querySelector('.addTodoBody')
 const todoDate = document.querySelector('.todoDate')
 const ListGroupOfTodos = document.querySelector('.todolist')
-
+const filter = document.querySelector('#filter')
 let g = t => document.createElement(t)
 
 function responseMessage(alertType, message) {
@@ -28,6 +28,41 @@ function responseMessage(alertType, message) {
         divAlert.remove();
     },2000)
 }
+
+filter.addEventListener('keyup',function(e){
+  //  console.log(filter.value)
+    //
+    const listofTodos = document.querySelectorAll('.list-group-item')
+    listofTodos.forEach(function(todo){
+       // console.log(todo)
+       let filterValue = filter.value
+        let todoTitle = todo.textContent.trim()
+        todoTitle = todoTitle.substring(0,todoTitle.length-2)
+        console.log(todoTitle)
+        console.log(filterValue.indexOf(todoTitle))
+        if(filterValue.indexOf(todoTitle) === -1){
+            todo.setAttribute('style','display:none !important')
+        }else{
+            todo.setAttribute('style','display:flex!important;')
+        }
+    })
+   // console.log(listofTodos)
+})
+
+ListGroupOfTodos.addEventListener('click',(event)=>{
+    event.preventDefault();
+    // addeventlistener scope
+    if(event.target.className === 'fa fa-remove'){
+        // run here
+        let findParent = event.target.parentElement
+        findParent = event.target.parentElement.parentElement.parentElement
+        console.log(findParent)
+        findParent.remove();
+
+    }
+
+})
+
 
 addTodoBtn.addEventListener('click', e => {
     e.preventDefault();
