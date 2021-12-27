@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+ 
+
+body{
+    background-color: rgb(61, 51, 51);
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 1em;
+    text-decoration-color:none;
+    /* color:lightcyan;
+    border: radius 7px; ; */
+}
+.btn{
+    padding: 0.5em;
+    background-color: rgb(202, 29, 29);
+    color:white;
+    border-radius: 5px;
+
+}
+.btn:hover{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    opacity: 0.5;
+}
+.btn.yellow{
+    background-color: yellow;
+    color: black;
+}
+.content{
+    color: white;
+    display: none;
+}
